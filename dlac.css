@@ -1,0 +1,267 @@
+
+/* GENERAL STYLING */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #002D62;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #C9A63A;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 45, 98, 0.75);
+    padding: 20px;
+    width: 80%;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 25px;
+}
+
+.section-title {
+    text-align: center;
+    color: #002D62;
+    margin: 30px 0;
+}
+
+/* LOAN PRODUCT CARDS */
+.loan-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.loan-card {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    flex: 1;
+    min-width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    border-top: 5px solid #C9A63A;
+}
+
+.loan-card h3 {
+    color: #002D62;
+}
+
+.apply-btn {
+    display: inline-block;
+    background-color: #002D62;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.apply-btn:hover {
+    background-color: #C9A63A;
+    color: #002D62;
+}
+
+/* COMPARISON TABLE */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.comparison-table th {
+    background-color: #002D62;
+    color: white;
+    padding: 15px;
+}
+
+.comparison-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* APPLICATION FORM */
+.form-container {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid #002D62;
+    border-radius: 8px;
+    padding: 25px;
+    background-color: white;
+}
+
+legend {
+    background-color: #002D62;
+    color: white;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #002D62;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #C9A63A;
+    border-color: #002D62;
+}
+
+/* DECLARATION CHECKBOX */
+.declaration {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.declaration input {
+    width: auto;
+}
+
+.declaration label {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+    width: 100%;
+    background-color: #002D62;
+    color: #C9A63A;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #C9A63A;
+    color: #002D62;
+}
+
+/* FOOTER */
+footer {
+    background-color: #002D62;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .loan-container {
+        flex-direction: column;
+    }
+
+    .hero-text h2 {
+        font-size: 22px;
+    }
+
+    .comparison-table {
+        font-size: 12px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 8px 4px;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+}
